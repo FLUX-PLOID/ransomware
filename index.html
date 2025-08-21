@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="warning-box">
+            <h1 class="glitch">WARNING: DEVICE ENCRYPTED</h1>
+            <div class="file-count" id="fileCount">Encrypting files: <span>0%</span></div>
+            <div class="timer" id="timer">05:00</div>
+            
+            <div class="unlock-section">
+                <input type="text" id="codeInput" placeholder="Enter code 'SECURE123'">
+                <button id="unlockBtn">UNLOCK</button>
+            </div>
+            
+            <p class="disclaimer">
+                This is a cybersecurity simulation for educational purposes only.<br>
+                Enter code "SECURE123" to end the simulation.
+            </p>
+        </div>
+    </div>
+    <audio loop id="warningSound">
+        <source src="warning-sound.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
